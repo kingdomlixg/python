@@ -5,7 +5,7 @@
 import pyodbc
 myfile=open("c:\\license.log",encoding='gb18030',errors='ignore')
 
-conn = pyodbc.connect(r'DRIVER={SQL Server Native Client 11.0};SERVER=10.201.64.24;DATABASE=test;UID=sa;PWD=sa')
+conn = pyodbc.connect(r'DRIVER={SQL Server Native Client 11.0};SERVER=10.201.64.24;DATABASE=test;UID=123;PWD=123')
 cursor = conn.cursor()
 
 cursor.execute("delete from bp_license")
